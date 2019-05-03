@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/app/app";
+import App from "./components/app/app.jsx";
 
 const init = () => {
   const settings = {
@@ -11,7 +11,7 @@ const init = () => {
   ReactDOM.render(
     <App
       gameTime={settings.gameTime}
-      errorCOunt={settings.errorCount}
+      errorCount={settings.errorCount}
     />,
     document.querySelector(`.main`),
   );
